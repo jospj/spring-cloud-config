@@ -1,0 +1,6 @@
+#https://www.baeldung.com/spring-cloud-bootstrapping
+spring:
+  application:
+    name: eurekaserver
+  config:
+    import: configserver:${CONFIG_SERVER_URL:http://localhost:8888}
